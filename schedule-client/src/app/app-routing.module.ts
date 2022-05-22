@@ -1,13 +1,17 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 import { LayoutAuthComponent } from './core/components/layout-auth/page/layout-auth.component';
 import { LayoutNoAuthComponent } from './core/components/layout-no-auth/layout-no-auth.component';
 
-const routes: Routes = [
+export const APP_ROUTES: Routes = [
   {
     path: '',
-    component: LayoutAuthComponent
-
+    component: LayoutAuthComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('./fetures/home/home.module').then(m => m.HomeModule)
+      }
+    ]
   },
   {
     path: 'auth',
@@ -15,9 +19,3 @@ const routes: Routes = [
 
   }
 ];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
