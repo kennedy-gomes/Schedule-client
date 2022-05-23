@@ -4,10 +4,10 @@ import { RouterModule } from '@angular/router';
 
 import { UsuarioComponent } from './page/usuario/usuario.component';
 import { USUARIO_ROUTES } from './usuario-routing.module';
-
+import { ListagemComponent } from './components/listagem/listagem.component';
 
 @NgModule({
-  declarations: [ UsuarioComponent],
+  declarations: [ UsuarioComponent, ListagemComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(USUARIO_ROUTES),

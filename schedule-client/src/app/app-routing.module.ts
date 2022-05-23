@@ -14,6 +14,10 @@ export const APP_ROUTES: Routes = [
       {
         path: '',
         loadChildren: () => import('./fetures/usuarios/usuario.module').then(m => m.UsuarioModule)
+      },
+      {
+        path: '',
+        loadChildren: () => import('./fetures/cliente/cliente.module').then(m => m.ClienteModule)
       }
     ]
   },
