@@ -1,0 +1,22 @@
+<div class="usuario">
+  <h1>Buscar usuário</h1>
+  <div class="campo">
+    <label for="nome">Nome:</label>
+    <input placeholder="Nome" type="text" name="nome" id="nome" required>
+  </div>
+  <div class="campo1">
+    <label for="email">Email:</label>
+    <input placeholder="Email" type="email" name="email" id="email" required>
+  </div>
+  <div class="botao">
+    <button class="filtrar">
+      <fa-icon [icon]="faSearch"> </fa-icon>
+    </button>
+    <button class="limpar">
+      <fa-icon [icon]="faEraser"> </fa-icon>
+    </button>
+  </div>
+  <a [routerLink]="['/usuario/cadastro']"><button class="add">
+    <fa-icon [icon]="faPlus"> </fa-icon>
+    </button></a>
+</div>

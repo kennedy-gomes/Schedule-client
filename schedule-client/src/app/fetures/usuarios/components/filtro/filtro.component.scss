@@ -1,0 +1,67 @@
+
+h1{
+  font-size: 20px;
+}
+
+.campo{
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.campo input{
+  display: inline-block;
+  font-size: 15px;
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.campo1{
+  display: inline-block;
+  font-size: 20px;
+}
+
+.campo1 input{
+  display: inline-block;
+  font-size: 15px;
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.botao{
+  display: inline-block;
+}
+
+.usuario{
+  text-align: center;
+}
+
+.limpar{
+  width: 35px;
+  height: 35px;
+  margin-left: 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgba(209, 209, 96, 0.849);
+}
+
+.filtrar{
+  width: 35px;
+  height: 35px;
+  margin-left: 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgb(102, 196, 102);
+}
+
+.add{
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  margin: 5px;
+  float: right;
+  cursor: pointer;
+  background-color: rgb(102, 196, 102);
+}
