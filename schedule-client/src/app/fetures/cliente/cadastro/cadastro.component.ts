@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faArrowLeft, faCheck, IconDefinition, } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faCheck, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-cadastro',

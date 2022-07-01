@@ -10,7 +10,6 @@ h2{
   display: inline-block;
   justify-content: center;
   align-items: center;
-  margin-left: 50px;
   font-size: 25px;
 }
 
@@ -21,57 +20,80 @@ h2{
     margin-left: 5px;
     display: inline-block;
     height: 25px;
-    width: 255px;
+    width: 280px;
   }
   display: inline-block;
-  margin-left: 145px;
+  margin-left: 180px;
   padding: 5px;
   font-size: 20px;
 }
 
-.email{
+.origem{
   input{
     border: 1px solid black;
     border-radius: 30px;
     margin-left: 5px;
     display: inline-block;
     height: 25px;
-    width: 250px;
+    width: 280px;
   }
   display: inline-block;
-  margin-left: 200px;
+  margin-left: 190px;
   padding: 5px;
   font-size: 20px;
 }
 
-.senha{
+.descricao{
   input{
     border: 1px solid black;
     border-radius: 30px;
     margin-left: 5px;
     display: inline-block;
     height: 25px;
-    width: 250px;
+    width: 280px;
   }
   display: inline-block;
-  margin-left: 80px;
+  margin-left: 180px;
   padding: 5px;
   font-size: 20px;
 }
 
-.Acesso {
-  margin-left: 205px;
+.telefone{
+  input{
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-left: 5px;
+    display: inline-block;
+    height: 25px;
+    width: 280px;
+  }
   display: inline-block;
+  margin-left: 190px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.procurar{
+  input{
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-left: 5px;
+    display: inline-block;
+    height: 25px;
+    width: 280px;
+  }
+  display: inline-block;
+  margin-left: 95px;
+  padding: 5px;
   font-size: 20px;
 }
 
 .botao{
   width: 35px;
   height: 35px;
-  margin-left: 30px;
-  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-top: 40px;
   float: left;
-  margin-top: 30px;
   border-radius: 10px;
   padding: 5px 10px;
   cursor: pointer;
@@ -80,17 +102,17 @@ h2{
 .botao1{
   width: 35px;
   height: 35px;
-  margin-right: 80px;
-  margin-bottom: 20px;
+  margin-right: 60px;
+  margin-top: 40px;
+  margin-bottom: 10px;
   float: right;
-  margin-top: 30px;
   border-radius: 10px;
   cursor: pointer;
   background-color: rgb(147, 233, 147);
 }
 
 @media (max-width: 1193px){
-  .Acesso, .email, .botao, .botao1 {
+  .telefone, .origem, .botao, .botao1 {
     margin-left: 120px;
   }
 }
@@ -98,4 +120,9 @@ h2{
  * {
     margin-left: 0px;
   }
+}
+
+label{
+  width: 100px;
+  display: inline-block;
 }

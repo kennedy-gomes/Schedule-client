@@ -1,2 +1,29 @@
-<p>cadastro works!</p>
+<div class="cadastro">
+  <h2> Cadastro de usuários</h2>
+  <div class="nome">
+    <label for="nome">Nome:</label>
+    <input placeholder=" Digite seu nome" type="text" name="nome" id="nome" required>
+  </div>
+  <div class="email">
+    <label for="Email">Email:</label>
+    <input placeholder=" Digite seu email" type="email" name="email" id="email" required>
+  </div>
+  <div class="senha">
+    <label for="senha">Senha:</label>
+    <input placeholder="Digite sua senha" type="password" name="senha" id="senha" required>
+  </div>
+  <div class="Acesso">
+    <label for="acesso">Primeiro Acesso:</label> Sim
+    <input type="radio" id="sim" name="Acesso" value="sim" required> Não
+    <input type="radio" id="nao" name="Acesso" value="nao" required>
+  </div>
+  <a [routerLink]="['/usuario/listar']">
+  <button class="botao" title="voltar">
+    <fa-icon [icon]="faArrowLeft"> </fa-icon>
+  </button>
+  </a>
+  <button class="botao1" title="confirmar">
+    <fa-icon [icon]="faCheck"> </fa-icon>
+    </button>
+</div>
 

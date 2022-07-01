@@ -23,7 +23,12 @@ export const APP_ROUTES: Routes = [
   },
   {
     path: 'auth',
-    component: LayoutNoAuthComponent
-
+    component: LayoutNoAuthComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('./core/components/layout-no-auth/components/login.module').then(m => m.LoginModule)
+      }
+    ]
   }
 ];
