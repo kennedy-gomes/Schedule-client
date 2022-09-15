@@ -9,9 +9,12 @@ import { faArrowLeft, faCheck, IconDefinition } from '@fortawesome/free-solid-sv
 export class CadastroComponent implements OnInit {
   public faArrowLeft: IconDefinition = faArrowLeft;
   public faCheck: IconDefinition = faCheck;
+
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+
   }
 
 }

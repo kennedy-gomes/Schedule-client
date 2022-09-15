@@ -14,47 +14,32 @@ h2{
   font-size: 25px;
 }
 
-.nome{
+.formControl{
   input{
-    border: 1px solid black;
-    border-radius: 30px;
-    margin-left: 5px;
+    width: 100%;
+    padding: 12px;
+    // border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
     display: inline-block;
-    height: 25px;
-    width: 255px;
+
   }
   display: inline-block;
-  margin-left: 145px;
+  margin-left: 170px;
   padding: 5px;
   font-size: 20px;
 }
 
 .email{
   input{
-    border: 1px solid black;
-    border-radius: 30px;
-    margin-left: 5px;
-    display: inline-block;
-    height: 25px;
-    width: 250px;
+    width: 100%;
+    padding: 12px;
+    // border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
   }
   display: inline-block;
   margin-left: 200px;
-  padding: 5px;
-  font-size: 20px;
-}
-
-.senha{
-  input{
-    border: 1px solid black;
-    border-radius: 30px;
-    margin-left: 5px;
-    display: inline-block;
-    height: 25px;
-    width: 250px;
-  }
-  display: inline-block;
-  margin-left: 80px;
   padding: 5px;
   font-size: 20px;
 }

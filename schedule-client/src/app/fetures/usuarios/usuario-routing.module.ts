@@ -14,6 +14,9 @@ export const USUARIO_ROUTES: Routes = [
       },
       {
         path: 'cadastro', component: CadastroComponent
+     },
+     {
+      path: 'editar/:id', component: CadastroComponent
      }
     ]
   }

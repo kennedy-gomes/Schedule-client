@@ -8,13 +8,16 @@ import { ListagemComponent } from './components/listagem/listagem.component';
 import { FiltroComponent } from './components/filtro/filtro.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ControlErrorComponent } from './control-error/control-error.component';
 
 @NgModule({
-  declarations: [ UsuarioComponent, ListagemComponent, FiltroComponent, CadastroComponent],
+  declarations: [ UsuarioComponent, ListagemComponent, FiltroComponent, CadastroComponent, ControlErrorComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(USUARIO_ROUTES),
-    FontAwesomeModule
+    FontAwesomeModule,
+    ReactiveFormsModule
   ]
 })
 export class UsuarioModule { }

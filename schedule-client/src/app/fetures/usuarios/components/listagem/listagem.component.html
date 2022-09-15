@@ -10,28 +10,16 @@
   <br>
  </thead>
  <tbody>
-  <tr>
-      <td>Kennedy gomes vieira</td>
-      <td>gomeskennedy11@gmail.com</td>
+  <tr *ngFor="let user of dataSource">
+      <td>{{ user.nome }}</td>
+      <td>{{user.email }}</td>
       <td>
-        <button class="editar" title="editar">
+        <button class="editar" title="editar" (click)="redirectPut(user.id)">
           <fa-icon [icon]="faPencil"> </fa-icon>
           </button>
-        <button class="deletar" title="deletar">
+        <button class="deletar" title="deletar" (click)="delete(user.id)">
           <fa-icon [icon]="faTrashcan"> </fa-icon>
          </button>
-      </td>
-  </tr>
-  <tr>
-      <td>Alex junior saturnino sobrinho</td>
-      <td>gomeskennedy11@gmail.com</td>
-      <td>
-        <button class="editar" title="editar">
-          <fa-icon [icon]="faPencil"> </fa-icon>
-          </button>
-        <button class="deletar" title="deletar">
-          <fa-icon [icon]="faTrashcan"> </fa-icon>
-        </button>
       </td>
   </tr>
 </tbody>

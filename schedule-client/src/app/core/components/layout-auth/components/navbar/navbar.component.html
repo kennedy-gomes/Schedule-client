@@ -13,14 +13,14 @@
               <a [routerLink]="['/home']">Início</a>
           </li>
           <li>
-              <a [routerLink]="['/usuario']">Usuário</a>
+              <a [routerLink]="['/usuario/listar']">Usuário</a>
           </li>
           <li>
-              <a [routerLink]="['/cliente']">cliente</a>
+              <a [routerLink]="['/cliente/listar']">cliente</a>
           </li>
       </ul>
   </nav>
   <aside class="autenticacao">
-      <a href="#sair" class="botao destaque">Sair</a>
+      <a [routerLink]="['auth/login']" class="botao destaque">sair</a>
   </aside>
 </header>
